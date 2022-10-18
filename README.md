@@ -1,8 +1,32 @@
 # Sireum Completions
 ## Generated Shell Completions for Sireum
-[Demo](#demo) [Source](#source) [Input](#input) [Output](#output)
+[Demo](#demo) [Setup](#setup) [Source](#source) [Input](#input) [Output](#output)
 ### Demo
 ![](docs/demo.gif)
+### Setup
+#### Create completions.sh
+```shell
+# Create completions.sh
+git clone https://github.com/matthewweis/sireum-completions.git
+cd sireum-completions
+./compgen.cmd > ${SIREUM_HOME}/bin/completions.sh
+```
+#### Test the completions (session only)
+```shell
+source ${SIREUM_HOME}/bin/completions.sh
+```
+#### Install the completions (bash)
+```shell
+# Add to `~/.bashrc` or `~/.bash_profile`
+source ${SIREUM_HOME}/bin/completions.sh
+```
+#### Install the completions (zsh)
+```shell
+# Add to `~/.zshrc`
+autoload bashcompinit
+bashcompinit
+source ${SIREUM_HOME}/bin/completions.sh
+```
 ### Source
 ```scala
 def compGen(config: org.sireum.cli.CliOpt): ST = {
