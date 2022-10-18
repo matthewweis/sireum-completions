@@ -1,5 +1,7 @@
 # Sireum Completions
 ## Generated Shell Completions for Sireum
+[Demo](#demo) [Source](#source) [Input](#input) [Output](#output)
+### Demo
 ![](docs/demo.gif)
 ### Source
 ```scala
